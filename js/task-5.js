@@ -5,7 +5,7 @@
 const inputRef = document.querySelector("#name-input");
 const spanRef = document.querySelector("#name-output");
 
-document.addEventListener("input", (event) => {
+document.addEventListener('keydown', (event) => {
   if (event.code !== "Enter") return;
   spanRef.textContent = inputRef.value;
   if (inputRef.value === "") {
