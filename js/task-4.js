@@ -14,11 +14,11 @@ let counterValue = 0;
 const increment = sub.addEventListener("click", () => {
   counterValue += 1;
 
-  document.getElementById("value").textContent = counterValue;
+  span.textContent = counterValue;
 });
 
 const decrement = add.addEventListener("click", () => {
   counterValue -= 1;
 
-  document.getElementById("value").textContent = counterValue;
+  span.textContent = counterValue;
 });

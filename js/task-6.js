@@ -8,14 +8,15 @@
 const inputRef = document.querySelector("#validation-input");
 
 inputRef.addEventListener("blur", (event) => {
-  const { value } = event.target;
+  const {value} = event.target;
 
-  if (inputRef.getAttribute("data-length") > value.length) {
-    inputRef.classList.remove("valid");
-    inputRef.classList.add("invalid");
-  } else {
+  if (Number(inputRef.getAttribute("data-length")) === value.length){
     inputRef.classList.remove("invalid");
     inputRef.classList.add("valid");
+  } else {
+    inputRef.classList.remove("valid");
+    inputRef.classList.add("invalid");
+   
   }
 });
 

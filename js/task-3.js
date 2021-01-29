@@ -28,9 +28,13 @@ const images = [
 const ulRef = document.querySelector("#gallery");
 
 const liRefs = images.reduce(
-  (x, images) =>
-    x +
-    `<li class = 'list-item'><img class='list-img' src="${images.url}" alt = "${images.alt}"></li>`,
-  []
+ (x, images) =>
+   x +
+  `<li class = 'list-item'><img class='list-img' src="${images.url}" alt = "${images.alt}"></li>`,
+ ""
 );
 ulRef.insertAdjacentHTML("afterbegin", liRefs);
+
+
+
+
